@@ -6,13 +6,23 @@
     "dev:sass": "node-sass source/scss/style.scss --watch --output=compiled/css --output-style=compressed --source-map=true",
     "dev": "run-p dev:*",
     "build:sass": "node-sass source/scss/style.scss --output=compiled/css --output-style=compressed --source-map=true",
-    "deploy:surge": "surge --project . --domain clicky-project.surge.sh",
-    "deploy": "run-s build:* deploy:surge"
+    "deploy:surge": "surge --project . --domain https://will1858-js-package-json-intro.surge.sh/",
+    "deploy": "run-s build stylelint standard build:* deploy:surge ",
+    "build": "htmlhint index.html",
+    "stylelint": "stylelint source/scss/style.scss",
+    "standard": "standard clicky.js"
   },
   "devDependencies": {
+    "htmlhint": "^0.11.0",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0",
     "npm-run-all": "^4.1.5",
+    "standard": "^12.0.1",
+    "stylelint": "^10.0.1",
+    "stylelint-config-standard": "^18.3.0",
     "surge": "^0.20.4"
+  },
+  "stylelint": {
+    "extends": "stylelint-config-standard"
   }
 }

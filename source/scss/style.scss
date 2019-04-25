@@ -1,8 +1,7 @@
 body {
-  
   margin: 0;
   background-color: #333;
-  color: #fff
+  color: #fff;
 }
 
 table.menu {
@@ -16,16 +15,16 @@ table.menu {
   border-bottom-right-radius: 6px;
   background-color: #777;
   box-shadow: #000 0 0 15px;
-  font-family: 'Courier New', Courier, monospace
+  font-family: 'Courier New', Courier, monospace;
 }
 
 table.menu h1 {
   margin: 0 10px;
-  font-size: 20px
+  font-size: 20px;
 }
 
 table.menu td {
-  text-align: center
+  text-align: center;
 }
 
 table.menu button {
@@ -38,30 +37,28 @@ table.menu button {
   font-size: 12px;
   border: 1px solid #555;
   transition: width 0.5s, background-color 0.5s;
-  border-radius: 3px
-
-
+  border-radius: 3px;
 }
 
 table.menu button:hover {
   cursor: pointer;
   background-color: #ddf;
   width: 85%;
-  transition: width 0.5s, background-color 0.5s
+  transition: width 0.5s, background-color 0.5s;
 }
 
 table.menu button:active,
 table.menu button:focus {
-  outline: none
+  outline: none;
 }
 
 table.menu td.label {
-  width: 80px
+  width: 80px;
 }
 
 table.menu td.label,
 table.menu td.result {
-  text-align: right
+  text-align: right;
 }
 
 .clicky {
@@ -69,9 +66,9 @@ table.menu td.result {
   border-radius: 50%;
   background-color: #aaf;
   border: 1px solid #555;
-  box-shadow: #000 0 0 15px
+  box-shadow: #000 0 0 15px;
 }
 
 .clicky:hover {
-  cursor: pointer
+  cursor: pointer;
 }
